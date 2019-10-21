@@ -1,0 +1,15 @@
+{
+  "name": "olympus",
+  "version": "1.0.0",
+  "description": "Node.js app to run KratosMultihpysics simulations on the cloud.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-4-Clause",
+  "dependencies": {
+    "express": "^4.17.1",
+    "litegraph.js": "^0.7.0"
+  }
+}
