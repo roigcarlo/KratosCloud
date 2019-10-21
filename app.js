@@ -5,9 +5,14 @@ const PORT = 8080;
 
 const { spawn } = require('child_process');
 
+app.set('view engine', 'ejs');
+app.use(express.static('public'));
+app.use('/js', express.static(__dirname + '/node_modules/litegraph.js/build/'));
+app.use('/css', express.static(__dirname + '/node_modules/litegraph.js/css/'));
+
 app.get('/', function(req, res) {
-	res.status(200).send('Hello!');
-})
+	res.render('demo');
+});
 
 app.get('/runkratos', function(req, res) {
 	// Keep the connection open to retrieve the stream
