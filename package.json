@@ -14,7 +14,7 @@
   "license": "BSD-4-Clause",
   "dependencies": {
     "ejs": "^2.7.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "html": "^1.0.0",
     "litegraph.js": "^0.7.0"
   }
